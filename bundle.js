@@ -94,6 +94,7 @@ module.exports = chromahash
 
 function djb2(str) {
   var hash = 5381
+  var i = 0
   for (i = 0; i < str.length; i++) {
     char = str.charCodeAt(i)
     hash = (hash << 5) + hash + char /* hash * 33 + c */
